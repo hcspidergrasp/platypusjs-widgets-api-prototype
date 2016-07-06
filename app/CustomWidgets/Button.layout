@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
-  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="106px" prefWidth="400px"/>
-  <HtmlArea name="htmlArea" parent="view" prefHeight="80px" prefWidth="320px" text="htmlArea">
-    <AnchorsPaneConstraints height="80px" left="40px" top="10px" width="320px"/>
-  </HtmlArea>
-</layout>

@@ -1,28 +1,38 @@
-/**
- * 
- * @author ромашка
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
-define('Button', ['orm', 'forms', 'ui'], function (Orm, Forms, Ui, ModuleName) {
-    function module_constructor() {
-        var self = this
-                , model = Orm.loadModel(ModuleName)
-                , form = Forms.loadForm(ModuleName, model);
+
+
+define(['forms/box-pane'],function (BoxPane) {
+    function GreatButton(placeholder) {
+        var self = this;    
         
-        self.show = function () {
-            form.show();
-        };
+        //Button or any other widget could be created by own hands here        
+        var greatBtn = new BoxPane();
         
-        self.showOn = function (aPanel) {
-            aPanel.add(form.view);
-        };
+        greatBtn.element.className+="btn btn-primary";
         
-        // TODO : place your code here
-       
+        //and 
+        var pnlPlaceholder = placeholder;
+        pnlPlaceholder.add(greatBtn);
         
-        model.requery(function () {
-            // TODO : place your code here
+         //Sizes
+        Object.defineProperty(this,'height', {
+            set:function(val){greatBtn.height=val;}
         });
-         form.htmlArea.element.innerHTML = '<button class="btn btn-primary" href="#">Основная</button>';
+        
+        Object.defineProperty(this,'width', {
+            set:function(val){pnlPlaceholder.width=val;}
+        });
+        
+                
+        Object.defineProperty(this,'onActionPerformed', {
+            set:function(aAction){ greatBtn.element.addEventListener("click",aAction);}
+        });
+        
+         
     }
-    return module_constructor;
+    return GreatButton;
 });
