@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
-  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="300px" prefWidth="400px"/>
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="181px" prefWidth="297px"/>
   <BoxPane background="#e71414" cursor="0" name="pnlPlaceholder1" parent="view" prefHeight="50px" prefWidth="200px">
     <AnchorsPaneConstraints height="50px" left="10px" top="10px" width="200px"/>
   </BoxPane>
-  <BoxPane background="#dfb40f" cursor="0" name="pnlPlaceholder2" orientation="1" parent="view" prefHeight="70px" prefWidth="200px">
-    <AnchorsPaneConstraints height="70px" left="10px" top="90px" width="200px"/>
+  <BoxPane background="#fcf61c" cursor="0" name="pnlPlaceholder3" orientation="1" parent="view" prefHeight="30px" prefWidth="110px">
+    <AnchorsPaneConstraints height="30px" left="10px" top="70px" width="110px"/>
   </BoxPane>
 </layout>
