@@ -12,6 +12,10 @@ define('Button', ['orm', 'forms', 'ui'], function (Orm, Forms, Ui, ModuleName) {
             form.show();
         };
         
+        self.showOn = function (aPanel) {
+            aPanel.add(form.view);
+        };
+        
         // TODO : place your code here
        
         
